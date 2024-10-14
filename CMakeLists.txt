@@ -10,6 +10,7 @@ FetchContent_MakeAvailable(Catch2)
 
 add_executable(bench)
 target_sources(bench PRIVATE bench.cpp)
+target_compile_features(bench PRIVATE cxx_std_20)
 target_link_libraries(bench Catch2::Catch2WithMain)
 
 target_compile_options(

@@ -1,6 +1,6 @@
 #pragma once
 
-int fib(int const i) {
+consteval int fib(int i) {
   if (i <= 1) {
     return 1;
   }
